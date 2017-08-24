@@ -2,8 +2,7 @@
 //是否支持
 if(window.Notification==undefined){
 	alert("不支持此浏览器");
-	return;
-}
+}else{
 //首先验证是否有权限
 if(Notification.permission!='granted'){
 alert("当前浏览器没有授权 正在授权... 接受授权之后 请刷新页面");
@@ -14,6 +13,8 @@ c.onclose=function(){
 	alert("关闭了");
 }
 }
+}
+
 
 
 </script>
