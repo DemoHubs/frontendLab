@@ -5,6 +5,9 @@ alert("当前浏览器没有授权 正在授权... 接受授权之后 请刷新�
  Notification.requestPermission();//request
 }else{
 var c=new Notification('notifi',{body:'这是一个优雅的提醒',icon:'http://blog.seoui.com/img/avatar.jpg'});
+c.onclose=function(){
+	alert("关闭了");
+}
 }
 
 
